@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/serverItemLayout">
+
+    <ImageView
+        android:id="@+id/iconImg"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/usa_flag"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:layout_toStartOf="@+id/signal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iconImg"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/countryTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/soft_white"
+            android:fontFamily="@font/segobold"/>
+
+        <TextView
+            android:id="@+id/sub"
+            android:layout_below="@+id/countryTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_color"
+            android:fontFamily="@font/sego"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/signal"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/logo"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ConfigActivity"
+    android:background="@color/black_lite">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/our_commitment_to_protecting_your_privacy"
+        android:textColor="@color/pink_lite"
+        android:fontFamily="@font/segobold"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:padding="25dp"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_below="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="please click below to review our privacy policy and terms of services"
+        android:textColor="@color/soft_white"
+        android:fontFamily="@font/segolight"
+        android:textSize="16sp"
+        android:layout_marginTop="-40dp"
+        android:textAlignment="center"
+        android:padding="25dp"/>
+
+    <RelativeLayout
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp">
+
+        <ImageView
+            android:id="@+id/vpnBtn"
+            android:layout_gravity="center_horizontal"
+            android:tag="1"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:background="@drawable/button_agree"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_gravity="center_horizontal"
+            android:tag="1"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:background="@drawable/button_continue"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/status"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/byclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sego"
+            android:textStyle="bold"
+            android:textColor="@color/soft_white"
+            android:text="by clicking below you agree to our"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_below="@+id/byclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sego"
+            android:textColor="@color/pink_lite"
+            android:text="Privacy Policy"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/and"
+            android:layout_below="@+id/byclick"
+            android:layout_toEndOf="@+id/privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sego"
+            android:textColor="@color/soft_white"
+            android:text="and"
+            android:textSize="12sp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"/>
+
+        <TextView
+            android:id="@+id/term"
+            android:layout_below="@+id/byclick"
+            android:layout_toEndOf="@+id/and"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sego"
+            android:textColor="@color/pink_lite"
+            android:text="Terms of Service"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

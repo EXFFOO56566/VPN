@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "895836187280",
+    "project_id": "snake-vpn-fddff",
+    "storage_bucket": "snake-vpn-fddff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895836187280:android:deeb982ff4debf93578615",
+        "android_client_info": {
+          "package_name": "com.nairaland.snakevpn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895836187280-uinmnp38iv0s4dnpap3a3n5cumpqhseq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nairaland.snakevpn",
+            "certificate_hash": "3c29d14240958c4f80fb79a7ded81547fb744100"
+          }
+        },
+        {
+          "client_id": "895836187280-k6n97tcgmm537ardvgskh9691ue1k9ki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbeJQQ8B4tFLt87f7x3PfnNpKZJYhvKXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895836187280-k6n97tcgmm537ardvgskh9691ue1k9ki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

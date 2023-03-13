@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black_lite</item>
+        <item name="colorPrimaryDark">@color/black_lite</item>
+        <item name="colorAccent">@color/pink_lite</item>
+        <item name="colorControlNormal">@color/black_lite</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowActivityTransitions">false</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="NightTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black_lite</item>
+        <item name="colorPrimaryDark">@color/black_lite</item>
+        <item name="colorAccent">@color/pink_lite</item>
+        <item name="colorControlNormal">@color/black_lite</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowActivityTransitions">false</item>
+    </style>
+
+    <style name="BottomSheetTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

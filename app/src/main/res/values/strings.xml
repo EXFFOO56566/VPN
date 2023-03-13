@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Snake VPN Lite</string>
+    <string name="vpn_on">VPN ON</string>
+    <string name="vpn_off">VPN OFF</string>
+    <string name="navigation_drawer_open">drawer open</string>
+    <string name="navigation_drawer_close">drawer close</string>
+    <string name="connect">Connect</string>
+    <string name="connecting">Connecting</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connection_close_confirm">Would you like to cancel the current VPN Connection?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
+    <string name="que1">What is VPN?</string>
+    <string name="ans1">A VPN is the best way to conceal your activity online. When you use a VPN, your data connection is encrypted, so ISPs, governments, NSA spies, and other third parties cannot see which websites you visit, what you download, or whether you use services such as Whatsapp. Snake VPN protects your privacy and prevents others from monitoring and controlling your online communications and browsing activity. With Snake VPN, your location stays private and you can also switch between multiple VPN server locations.</string>
+    <string name="que2">Where can I find the Snake VPN server list?</string>
+    <string name="ans2">The list of Snake VPN server locations and the protocols/services supported in each country is available at server page. On the Servers page, you will also find extra information about the different server types.</string>
+    <string name="que3">How can I reach Snake VPN customer support?</string>
+    <string name="ans3">You can get support over telegram with our telegram number +2348179199863 we will answer your questions and solve your issues quickly and efficiently. Feel free to contact us anytime </string>
+    <string name="que4">What protocol does Snake VPN use?</string>
+    <string name="ans4">We use OpenVPN protocol. OpenVPN is a piece of open-source software that enables us to provide a reliable and secure VPN service. It is a protocol that can be used on both TCP and UDP ports. OpenVPN supports a great number of strong encryption algorithms and ciphers: to ensure the protection of your data, we use AES-256-GCM with a 4096-bit DH key. We recommend it for the most security-conscious users.</string>
+    <string name="que5">How can I check if I have connected successfully?</string>
+    <string name="ans5">After you select server and click conneect button, if the connection is successful it will show notification on your status bar that you have connected to the VPN.</string>
+    <string name="que6">How to purchase a Snake VPN subscription?</string>
+    <string name="ans6">To purchase a Snake VPN subscription, click bottom button on main page. Then select subscription type monthly, 3 month, 6 month, or yearly.</string>
+    <string name="que7">What makes Snake VPN special?</string>
+    <string name="ans7">Snake VPN takes basic VPN services to the next level with extra layers of functionality, additional web security services, and outstanding usability. Among our many features, you can find a huge network of servers optimized for specific purposes, an automatic kill switch in case of connection interruptions, a double encryption option, and a DNS leak resolver.</string>
+
+    <string name="set_account">Account</string>
+    <string name="set_about">About Us</string>
+    <string name="set_faq">FAQ</string>
+    <string name="set_help">Help Center</string>
+
+    <string name="abo_about">About Us</string>
+    <string name="abo_policy">Our Privacy Policy</string>
+    <string name="abo_term">Our Terms and Conditions</string>
+
+    <string name="acc_balance">Current Balance</string>
+    <string name="acc_nightmode">Night Mode</string>
+    <string name="acc_language">Change Language</string>
+    <string name="acc_rate">Rate Us</string>
+    <string name="acc_share">Share Apps</string>
+    <string name="acc_get">Get Points</string>
+    <string name="acc_exc">Exchange Points</string>
+
+    <string name="bs_english">English</string>
+    <string name="bs_hindi">Hindi translator</string>
+    <string name="bs_arabic">Arab translator</string>
+    <string name="bs_close">Close</string>
+    <string name="bs_select">Select Language</string>
+
+    <string name="upd_text">Your apps is not the latest version for better experience please update the app.</string>
+    <string name="upd_update">Update</string>
+    <string name="upd_later">Later</string>
+
+    <string name="mes_chat_hint">Type message</string>
+    <string name="mem_txt1">Connect through any of our server and remove ads, stay secure and anonymous with Snake VPN</string>
+    <string name="mem_access">Access premium servers</string>
+    <string name="mem_remove">Remove Ads</string>
+    <string name="our_commitment_to_protecting_your_privacy">Snake VPN protecting your privacy</string>
+</resources>

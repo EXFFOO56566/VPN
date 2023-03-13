@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MembershipActivity"
+    android:background="@color/black_lite">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segobold"
+                android:text="Get Membership"
+                android:textColor="@color/soft_white"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rela1"
+                android:layout_below="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segolight"
+                    android:text="Snake VPN Lite"
+                    android:textColor="@color/soft_white"
+                    android:textSize="14sp"
+                    android:layout_marginStart="20dp"/>
+
+                <ImageView
+                    android:layout_toEndOf="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_pro"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_through"
+                android:layout_below="@+id/rela1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sego"
+                android:text="@string/mem_txt1"
+                android:textColor="@color/soft_white"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_below="@id/txt_through"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/icon_premium_white"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sego"
+                    android:textColor="@color/soft_white"
+                    android:textSize="14sp"
+                    android:text="@string/mem_access"
+                    android:layout_marginStart="5dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel3"
+                android:layout_below="@+id/rel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/icon_removeads"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sego"
+                    android:textColor="@color/soft_white"
+                    android:textSize="14sp"
+                    android:text="@string/mem_remove"
+                    android:layout_marginStart="5dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/pricetwo"
+                android:layout_below="@+id/rel3"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/price_two"
+                android:layout_marginTop="25dp"/>
+
+            <ImageView
+                android:id="@+id/pricefive"
+                android:layout_below="@+id/pricetwo"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/price_five"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/priceten"
+                android:layout_below="@+id/pricefive"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/price_ten"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/priceeighteen"
+                android:layout_below="@+id/priceten"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/price_eighteen"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/part"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_bs_dark"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_premium"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_lite">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_lite">
+
+            <TextView
+                android:id="@+id/logTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/soft_white"
+                android:text="Not Connected"
+                android:fontFamily="@font/segobold"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"/>
+
+            <TextView
+                android:id="@+id/durationTv"
+                android:layout_below="@+id/logTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textColor="@color/soft_white"
+                android:textSize="16sp"
+                android:fontFamily="@font/segolight"
+                android:layout_centerHorizontal="true"/>
+
+            <RelativeLayout
+                android:id="@+id/banner_menu"
+                android:layout_below="@+id/durationTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp">
+
+                <com.nairaland.snakevpn.admob.TemplateView
+                    android:id="@+id/my_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:gnt_template_type="@layout/gnt_small_template_view"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rells"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/banner_menu"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/vpnBtn"
+                    android:tag="1"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/but_connect"/>
+
+                <TextView
+                    android:id="@+id/textconn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sego"
+                    android:text="CONNECT"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/holder_server"
+                android:layout_below="@+id/rells"
+                android:layout_width="225dp"
+                android:layout_height="30dp"
+                android:background="@drawable/server_holder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp">
+
+                <RelativeLayout
+                    android:id="@+id/hold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/selectedServerIcon"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/logo"
+                        android:scaleType="centerCrop"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/txt_server"
+                        android:layout_toEndOf="@+id/selectedServerIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/white"
+                        android:text="Argentina"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/sego"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:paddingStart="10dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/holder_time"
+                android:layout_below="@+id/holder_server"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp">
+
+                <RelativeLayout
+                    android:id="@+id/re1"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/downholder"
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/holder_download"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/byteInTv"
+                        android:layout_toEndOf="@+id/downholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0 Mb"
+                        android:textColor="@color/soft_white"
+                        android:textSize="14sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/sego"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/re2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/upholder"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/holder_upload"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/byteOutTv"
+                        android:layout_toStartOf="@+id/upholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0 Mb"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/sego"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_premium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sego"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/pink_lite"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/getpro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_bs_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sego"
+                android:textStyle="bold"
+                android:textColor="@color/soft_white"
+                android:text="Snake VPN Lite"
+                android:padding="6dp"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_toEndOf="@+id/text"
+                android:background="@drawable/icon_pro"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
